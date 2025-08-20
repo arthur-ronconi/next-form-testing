@@ -69,7 +69,7 @@ export async function handleConfirmSignUp(
       username: getFormData(formData, "email"),
       confirmationCode: getFormData(formData, "code"),
     });
-    autoSignIn();
+    // autoSignIn();
   } catch (error) {
     return getErrorMessage(error);
   }
